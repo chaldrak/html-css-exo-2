@@ -42,7 +42,7 @@ nav ul a:hover {
 }
 .section1 {
   background-color: #1f2039;
-  padding: 80px 175.5px;
+  padding: 80px 140.5px;
   width: 100%;
   display: flex;
   align-items: start;
@@ -59,14 +59,18 @@ nav ul a:hover {
   max-width: fit-content;
   margin-top: 20px;
 }
+.contact-hover :hover {
+  opacity: 0.5;
+}
+
 .paragraph {
   text-align: justify;
-  font-size: 16px;
+  font-size: 17.6px;
   color: white;
 }
 .paragraph em {
   font-style: normal;
-  color: #5b8bf3;
+  color: #94a2ee;
 }
 .robbielens img {
   height: 430px;
@@ -127,6 +131,9 @@ label {
   border: 0px;
   margin-top: 20px;
 }
+.envoie input:hover {
+  opacity: 0.5;
+}
 .contact label {
   display: flex;
 }
@@ -145,9 +152,11 @@ textarea {
   border-radius: 5px;
 }
 .section1 h1 {
-  font-size: 55px;
+  font-size: 56px;
   color: #a5b4fc;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  gap: 5px;
 }
 footer .footer-container {
   justify-content: space-between;
@@ -162,7 +171,8 @@ footer .footer-container {
 #twitter {
   margin-right: 20px;
 }
-#twitter:hover, #insta:hover {
+#twitter:hover,
+#insta:hover {
   opacity: 0.5;
 }
 
@@ -174,6 +184,9 @@ footer .footer-container {
 }
 .section4 {
   text-align: center;
+}
+.lienportfolio:hover {
+  opacity: 0.5;
 }
 .section4 h1 {
   font-family: "Montserrat", sans-serif;
@@ -256,7 +269,8 @@ caption {
   padding: 80px;
   width: 1263.33px;
 }
-.section7 h2 {
+.section7 h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   margin: 0px 0px 80px;
@@ -267,4 +281,10 @@ caption {
   margin-right: 10px;
   margin-bottom: 10px;
   object-fit: cover;
+}
+.section-photo1,
+.section-photo2 {
+  grid-template-columns: auto auto auto;
+  display: grid;
+  gap: 4px;
 }
