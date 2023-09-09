@@ -67,18 +67,20 @@
     </section>
     <section class="section3" id="contact">
       <h1>Parlons de votre projet</h1>
-      <form method="post" action="traitement.php">
-        <div class="contact">
-          <label for="nom"> nom </label>:
-          <input type="text" name="nom" id="nom" size="65" />
-        </div>
-        <div class="contact">
-          <label for="email"> email </label> :
-          <input type="email" name="email" id="email" size="65" />
-        </div>
-        <div class="contact">
-          <label for="message"> message</label> :
-          <textarea name="message" id="message" cols="130" rows="10"></textarea>
+      <form>
+        <div class="form-input">
+          <div class="contact">
+            <label for="nom"> nom </label>
+            <input type="text" name="nom" id="nom" />
+          </div>
+          <div class="contact">
+            <label for="email"> email </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="contact">
+            <label for="message"> message</label>
+            <textarea name="message" id="message" rows="12"></textarea>
+          </div>
         </div>
         <div class="envoie">
           <input type="submit" value="ENVOYER" />
@@ -89,8 +91,18 @@
       <div class="footer-container">
         <img src="assets/images/logo.png" alt="logo du site" />
         <div id="reseau-icone">
-          <img id="twitter" src="assets/images/twitter.png" alt="twitter" />
-          <img id="insta" src="assets/images/instagram.png" alt="insta" />
+          <a
+            href="http://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img id="twitter" src="assets/images/twitter.png" alt="twitter"
+          /></a>
+          <a
+            href="http://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img id="insta" src="assets/images/instagram.png" alt="insta"
+          /></a>
         </div>
       </div>
     </footer>

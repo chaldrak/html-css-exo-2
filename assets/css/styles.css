@@ -97,47 +97,51 @@ nav ul a:hover {
   margin-right: 15px;
   margin-top: 10px;
 }
+.contact:nth-child(3) {
+  grid-column: span 2;
+}
 label {
-  display: block;
   color: white;
-  flex: auto;
 }
 .contact input {
-  height: 42px;
+  height: 50px;
   border: 1px solid black;
   border-radius: 5px;
-  flex: auto;
 }
 .section3 {
   text-align: center;
   background-color: #1f2039;
+  padding: 80px 175.5px;
 }
-.contact input,
-label {
-  padding-right: 10px;
+.contact {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
 .envoie input {
-  width: 200px;
   border-radius: 50px;
   background-color: #9792c6;
-  height: 55px;
-  border: 0cm;
   color: white;
-  margin-bottom: 40px;
+  padding: 20px 60px;
+  border: 0px;
+  margin-top: 20px;
 }
-.contact textarea,
-label {
+.contact label {
   display: flex;
 }
 .section3 h1 {
-  margin-bottom: 40px;
-  padding-top: 80px;
   color: #a5b4fc;
   font-weight: bold;
+  margin-bottom: 40px;
+}
+.form-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 10px;
 }
 textarea {
-  margin-bottom: 17px;
   border-radius: 5px;
 }
 .section1 h1 {
@@ -158,6 +162,9 @@ footer .footer-container {
 #twitter {
   margin-right: 20px;
 }
+#twitter:hover, #insta:hover {
+  opacity: 0.5;
+}
 
 .section4,
 .section5 {
@@ -165,10 +172,13 @@ footer .footer-container {
   padding: 80px;
   width: 100%;
 }
+.section4 {
+  text-align: center;
+}
 .section4 h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 32px;
+  font-size: 55px;
   color: #a5b4fc;
 }
 .paraph {
@@ -199,34 +209,20 @@ footer .footer-container {
   background-color: #9d9ad1;
   font-family: "Manrope", sans-serif;
   border-radius: 50px;
-  max-width: fit-content;
   padding: 20px 30px;
-}
-.lienportfolio a {
   text-decoration: none;
-  color: #ffffff;
-  justify-content: center;
-}
-.section5 {
-  width: 1263.33px;
-  height: 691.33px;
-  padding: 80px 80px 80px 80px;
+  color: white;
 }
 td,
 th {
   border: 1.3px solid #838fcb;
-  width: 480px;
-  height: 50px;
   color: #ffffff;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
 }
 table {
   border-collapse: collapse;
-  height: 405px;
-}
-thead {
-  height: 52.67px;
+  width: 100%;
 }
 .tableau th {
   padding: 15px;
@@ -246,7 +242,7 @@ caption {
 }
 .section6 {
   background-color: #1f2039;
-  width: 1263.33px;
+  width: 100%;
   height: 228px;
   padding: 80px;
   font-family: "Montserrat", sans-serif;
@@ -259,7 +255,6 @@ caption {
 .section7 {
   padding: 80px;
   width: 1263.33px;
-  height: 1930.77px;
 }
 .section7 h2 {
   font-family: "Montserrat", sans-serif;
@@ -271,22 +266,5 @@ caption {
   height: 300px;
   margin-right: 10px;
   margin-bottom: 10px;
-}
-.img01,
-.img02,
-.img03,
-.img04,
-.img05,
-.img06,
-.img07,
-.img08,
-.img09,
-.pot1,
-.pot2,
-.pot3,
-.pot4,
-.pot5,
-.pot6 {
-  display: inline-block;
-  width: 357.77px;
+  object-fit: cover;
 }
