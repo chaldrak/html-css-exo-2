@@ -19,13 +19,11 @@ footer {
   width: 100%;
   padding: 20px 50px;
 }
-header .header-container {
+nav {
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-nav {
-  font-size: 16px;
 }
 nav ul {
   list-style-type: none;
@@ -77,20 +75,18 @@ nav ul a:hover {
 }
 .section2 {
   text-align: center;
-  padding: 35px 40px;
-  width: 100%;
-  margin-bottom: 40px;
+  padding: 80px;
   font-family: "Manrope", sans-serif;
 }
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
+.image-accueil {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  object-fit: cover;
+}
+.image-accueil img {
+  width: 100%;
+  height: 311px;
 }
 .hsec2 {
   margin-bottom: 80px;
@@ -152,7 +148,7 @@ textarea {
   border-radius: 5px;
 }
 .section1 h1 {
-  font-size: 56px;
+  font-size: 2.5rem;
   color: #a5b4fc;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
@@ -287,4 +283,182 @@ h3 {
   grid-template-columns: auto auto auto;
   display: grid;
   gap: 4px;
+}
+@media screen and (max-width: 996px) {
+  header,
+  .section1,
+  .section2,
+  .section3,
+  footer,
+  .section4,
+  .section5,
+  .section6,
+  .section7 {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  header {
+    background-color: white;
+    height: 131.5px;
+    width: 100%;
+    padding: 20px;
+  }
+  .header-container ul {
+    height: 22px;
+  }
+
+  .header-container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+  }
+
+  .robbielens {
+    width: 100%;
+  }
+
+  .robbielens img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section2,
+  .section3 {
+    display: block;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 0px;
+  }
+
+  .section1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .div-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-principal .paragraph {
+    text-align: center;
+    margin: 0px 0px 30px;
+  }
+
+  .section1 a {
+    border-radius: 50px;
+    background-color: #9792c6;
+    color: white;
+    text-decoration: none;
+    padding: px 15px;
+    display: block;
+    white-space: nowrap;
+    max-width: fit-content;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .hsec2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .image-accueil {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    gap: 10px;
+  }
+  .image-accueil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .section3 h1 {
+    font-size: 15px;
+  }
+
+  .contact input {
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .form-input {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 10px;
+  }
+  .contact:nth-child(3) {
+    grid-column: span 1;
+  }
+  .section4 h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #a5b4fc;
+  }
+  .section4 {
+    padding: 50px 20px;
+  }
+
+  .paraph {
+    text-align: center;
+    margin: 0px 0px 30px;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    padding: 20px 50px;
+  }
+  .section4 h2 {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0px 15px;
+  }
+  .paraph ul {
+    padding: 0px 0px 0px 40px;
+    margin: 30px 0px 0px;
+    text-align: left;
+  }
+  .lienportfolio {
+    background-color: #9d9ad1;
+    font-family: "Manrope", sans-serif;
+    border-radius: 50px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .section5 {
+    display: none;
+  }
+  .section6 {
+    height: 150px;
+  }
+  .section6 h1 {
+    font-size: 2rem;
+  }
+  .section7 {
+    width: 100%;
+    padding: 50px 20px;
+    object-fit: contain;
+  }
+  .section-photo1,
+  .section-photo2 {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    gap: 10px;
+  }
+  .section7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
