@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Inconsolata:wght@300&family=Kreon:wght@300;400;500;600;700&family=Open+Sans:wght@300;400&family=Quicksand:wght@500&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Ysabeau+Infant:ital,wght@0,1;0,100;0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+$page-color:white;
+$section-color: #1f2039;
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
-  background-color: white;
+  background-color: $page-color;
   width: auto;
   font-family: "Manrope", sans-serif;
 }
 
 header,
 footer {
-  background-color: white;
+  background-color: $page-color;
   height: 90px;
   width: 100%;
   padding: 20px;
@@ -71,7 +76,7 @@ footer {
   }
   
   .section1 {
-    background-color: #1f2039;
+    background-color: $section-color;
     padding: 80px 140.5px;
     width: 100%;
     display: flex;
@@ -87,7 +92,7 @@ footer {
     &__link {
       border-radius: 50px;
       background-color: #9792c6;
-      color: white;
+      color: $page-color;
       text-decoration: none;
       padding: 20px 30px;
       display: block;
@@ -101,7 +106,7 @@ footer {
     &__text {
       text-align: justify;
       font-size: 17.6px;
-      color: white;
+      color: $page-color;
     }
     &__text em {
       font-style: normal;
@@ -111,6 +116,9 @@ footer {
       height: 430px;
     }
     @media screen and (max-width: 996px) {
+
+            display: flex;
+            flex-direction: column-reverse;
       &__container {
         display: flex;
         flex-direction: column;
@@ -166,9 +174,14 @@ footer {
       }
     }
   }
+  label {
+    color: $page-color;
+    @media screen and (max-width:996px) {
+    margin-bottom: 5px;}
+  }
   .section3 {
     text-align: center;
-    background-color: #1f2039;
+    background-color: $section-color;
     padding: 80px 175.5px;
     &__contact input {
       height: 50px;
@@ -185,7 +198,7 @@ footer {
     &__button {
       border-radius: 50px;
       background-color: #9792c6;
-      color: white;
+      color: $page-color;
       padding: 20px 60px;
       cursor: pointer;
       border: 0px;
@@ -216,7 +229,7 @@ footer {
     }
     @media screen and (max-width: 996px) {
       width: 100%;
-      display: block;
+      
       &__tittle {
         font-size: 15px;
       }
@@ -228,12 +241,18 @@ footer {
       }
       &__form {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
       }
       &__contact--messag {
         grid-column: span 1;
       }
+      &__contact textarea {
+        border-radius: 5px;
+        width: 100%;
+      }
       &__contact input {
         height: 25px;
+        width: 100%;
       }
     }
   }
@@ -252,7 +271,7 @@ footer {
   }
   .section4 {
     text-align: center;
-    background-color: #1f2039;
+    background-color: $section-color;
     padding: 80px;
     width: 100%;
     &__text {
@@ -261,11 +280,11 @@ footer {
       margin: 0px 225.5px 80px;
       padding: 50px;
       text-align: justify;
-      color: #ffffff;
+      color: $page-color;
       width: 653px;
       height: 460px;
-      border-bottom: 1px solid white;
-      border-right: 1px solid white; 
+      border-bottom: 1px solid $page-color;
+      border-right: 1px solid $page-color; 
     }
       &__tittle1 {
         font-family: "Montserrat", sans-serif;
@@ -277,7 +296,7 @@ footer {
         font-family: "Manrope", sans-serif;
         text-align: center;
         font-size: 24px;
-        color: #ffffff;
+        color: $page-color;
         margin: 30px 0px 80px;
       }
       &__link {
@@ -286,7 +305,7 @@ footer {
         border-radius: 50px;
         padding: 20px 30px;
         text-decoration: none;
-        color: white;
+        color: $page-color;
       }
       &__link:hover {
         opacity: 0.5;
@@ -322,13 +341,13 @@ footer {
     }
   }
   .section5 {
-    background-color: #1f2039;
+    background-color: $section-color;
     width: 100%;
     padding: 80px;
     height: 736px;
     &__th,&__td {
       border: 1.3px solid #838fcb;
-      color: #ffffff;
+      color: $page-color;
       font-family: "Manrope", sans-serif;
       font-size: 16px;
     }
@@ -349,14 +368,14 @@ footer {
       margin-bottom: 80px;
       font-family: "Manrope", sans-serif;
       font-size: 24px;
-      color: #ffffff;
+      color: $page-color;
       font-weight: bold;
     }
     @media screen and (max-width:996px) {
     display: none;}
   }
   .section6 {
-    background-color: #1f2039;
+    background-color: $section-color;
     width: 100%;
     height: 228px;
     padding: 80px;
@@ -421,4 +440,6 @@ footer {
       width: 100%;
       padding: 50px 20px;
     } 
+    
  }
+ 

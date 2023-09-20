@@ -116,6 +116,10 @@ footer {
   height: 430px;
 }
 @media screen and (max-width: 996px) {
+  .section1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .section1__container {
     display: flex;
     flex-direction: column;
@@ -176,6 +180,15 @@ footer {
   }
 }
 
+label {
+  color: white;
+}
+@media screen and (max-width: 996px) {
+  label {
+    margin-bottom: 5px;
+  }
+}
+
 .section3 {
   text-align: center;
   background-color: #1f2039;
@@ -227,7 +240,6 @@ footer {
 @media screen and (max-width: 996px) {
   .section3 {
     width: 100%;
-    display: block;
   }
   .section3__tittle {
     font-size: 15px;
@@ -240,12 +252,18 @@ footer {
   }
   .section3__form {
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
   .section3__contact--messag {
     grid-column: span 1;
   }
+  .section3__contact textarea {
+    border-radius: 5px;
+    width: 100%;
+  }
   .section3__contact input {
     height: 25px;
+    width: 100%;
   }
 }
 
@@ -275,7 +293,7 @@ footer {
   margin: 0px 225.5px 80px;
   padding: 50px;
   text-align: justify;
-  color: #ffffff;
+  color: white;
   width: 653px;
   height: 460px;
   border-bottom: 1px solid white;
@@ -291,7 +309,7 @@ footer {
   font-family: "Manrope", sans-serif;
   text-align: center;
   font-size: 24px;
-  color: #ffffff;
+  color: white;
   margin: 30px 0px 80px;
 }
 .section4__link {
@@ -345,7 +363,7 @@ footer {
 }
 .section5__th, .section5__td {
   border: 1.3px solid #838fcb;
-  color: #ffffff;
+  color: white;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
 }
@@ -367,7 +385,7 @@ footer {
   margin-bottom: 80px;
   font-family: "Manrope", sans-serif;
   font-size: 24px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
 }
 @media screen and (max-width: 996px) {
