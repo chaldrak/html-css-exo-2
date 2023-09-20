@@ -2,61 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <nav>
+        <nav class="navbarre">
           <img
-            class="imagelogo1"
+            class="navbarre__logo"
             src="assets/images/logo.png"
             alt="logo du site"
           />
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+          <ul class="navbarre__main">
+            <li><a class="navbarre__link" href="/">Accueil</a></li>
+            <li><a class="navbarre__link" href="a-propos.html">À propos</a></li>
+            <li>
+              <a class="navbarre__link" href="portfolio.html">Portfolio</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="section6">
-      <h1>Portfolio</h1>
+      <h1 class="section6__tittle">Portfolio</h1>
     </section>
     <section class="section7">
-      <h2>Paysages</h2>
+      <h2 class="section7__tittle">Paysages</h2>
 
-      <div class="section-photo1">
-        <img src="assets/images/portfolio/paysage1.jpg" alt="paysage1" />
-        <img src="assets/images/portfolio/paysage2.jpg" alt="paysage2" />
-        <img src="assets/images/portfolio/paysage3.jpg" alt="paysage3" />
-        <img src="assets/images/portfolio/paysage4.jpg" alt="paysage4" />
-        <img src="assets/images/portfolio/paysage5.jpg" alt="paysage5" />
-        <img src="assets/images/portfolio/paysage6.jpg" alt="paysage6" />
-        <img src="assets/images/portfolio/paysage7.jpg" alt="paysage7" />
-        <img src="assets/images/portfolio/paysage8.jpg" alt="paysage8" />
-        <img src="assets/images/portfolio/paysage9.jpg" alt="paysage9" />
+      <div class="section7-picture">
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage1.jpg"
+          alt="paysage1"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage2.jpg"
+          alt="paysage2"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage3.jpg"
+          alt="paysage3"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage4.jpg"
+          alt="paysage4"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage5.jpg"
+          alt="paysage5"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage6.jpg"
+          alt="paysage6"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage7.jpg"
+          alt="paysage7"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage8.jpg"
+          alt="paysage8"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/paysage9.jpg"
+          alt="paysage9"
+        />
       </div>
-      <h3>Portraits</h3>
-      <div class="section-photo2">
-        <img src="assets/images/portfolio/portrait1.jpg" alt="portrait1" />
-        <img src="assets/images/portfolio/portrait2.jpg" alt="portrait2" />
-        <img src="assets/images/portfolio/portrait3.jpg" alt="portrait3" />
-        <img src="assets/images/portfolio/portrait4.jpg" alt="portrait4" />
-        <img src="assets/images/portfolio/portrait5.jpg" alt="portrait5" />
-        <img src="assets/images/portfolio/portrait6.jpg" alt="portrait6" />
+      <h3 class="section7__tittle">Portraits</h3>
+      <div class="section7__picture">
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait1.jpg"
+          alt="portrait1"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait2.jpg"
+          alt="portrait2"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait3.jpg"
+          alt="portrait3"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait4.jpg"
+          alt="portrait4"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait5.jpg"
+          alt="portrait5"
+        />
+        <img
+          class="section7__img"
+          src="assets/images/portfolio/portrait6.jpg"
+          alt="portrait6"
+        />
       </div>
     </section>
-    <footer>
-      <div class="footer-container">
-        <img src="assets/images/logo.png" alt="logo du site" />
-        <div id="reseau-icone">
-          <img id="twitter" src="assets/images/twitter.png" alt="twitter" />
-          <img id="insta" src="assets/images/instagram.png" alt="insta" />
-        </div>
+    <footer class="footer-container">
+      <img src="assets/images/logo.png" alt="logo du site" />
+      <div id="reseau-icone">
+        <a
+          href="http://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="footer__media"
+            src="assets/images/twitter.png"
+            alt="twitter"
+        /></a>
+        <a
+          href="http://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="footer__media"
+            src="assets/images/instagram.png"
+            alt="insta"
+        /></a>
       </div>
     </footer>
   </body>

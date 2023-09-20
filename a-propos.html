@@ -2,30 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <nav>
+        <nav class="navbarre">
           <img
-            class="imagelogo1"
+            class="navbarre__logo"
             src="assets/images/logo.png"
             alt="logo du site"
           />
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+          <ul class="navbarre__main">
+            <li><a class="navbarre__link" href="/">Accueil</a></li>
+            <li><a class="navbarre__link" href="a-propos.html">À propos</a></li>
+            <li>
+              <a class="navbarre__link" href="portfolio.html">Portfolio</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="section4">
-      <h1>À propos</h1>
-      <div class="paraph">
+      <h1 class="section4__tittle1">À propos</h1>
+      <div class="section4__text">
         <p>
           Photographe depuis plus de 5 ans, je réalise des reportages aux photos
           dynamiques et pertinentes pour vos projets de communication.
@@ -34,15 +36,15 @@
           de vos photos retouchées, prêtes à l’emploi.
         </p>
 
-        <h2>Services</h2>
-        <ul>
+        <h2 class="section4__tittle2">Services</h2>
+        <ul class="section4__main">
           <li>Portrait seul ou à plusieurs</li>
           <li>Shooting mode</li>
           <li>Retouches sur message</li>
           <li>Développement</li>
         </ul>
       </div>
-      <a href="portfolio.html" class="lienportfolio"> VOIR MON PORTFOLIO </a>
+      <a href="portfolio.html" class="section4__link"> VOIR MON PORTFOLIO </a>
     </section>
     <section class="section5">
       <table class="tableau">
@@ -70,13 +72,27 @@
         </tbody>
       </table>
     </section>
-    <footer>
-      <div class="footer-container">
-        <img src="assets/images/logo.png" alt="logo du site" />
-        <div id="reseau-icone">
-          <img id="twitter" src="assets/images/twitter.png" alt="twitter" />
-          <img id="insta" src="assets/images/instagram.png" alt="insta" />
-        </div>
+    <footer class="footer-container">
+      <img src="assets/images/logo.png" alt="logo du site" />
+      <div id="reseau-icone">
+        <a
+          href="http://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="footer__media"
+            src="assets/images/twitter.png"
+            alt="twitter"
+        /></a>
+        <a
+          href="http://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="footer__media"
+            src="assets/images/instagram.png"
+            alt="insta"
+        /></a>
       </div>
     </footer>
   </body>

@@ -17,25 +17,56 @@ footer {
   background-color: white;
   height: 90px;
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px;
+  @media screen and (max-width: 996px) {
+    header,
+    footer {
+      height: 131.5px;
+    }
+  }
 }
-nav {
+
+.navbarre {
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 996px) {
+    .navbarre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: auto;
+    }
+    &__main {
+      height: 22px;
+    }
+    &__link {
+      border-radius: 50px;
+      background-color: #9792c6;
+      color: white;
+      text-decoration: none;
+      padding: px 15px;
+      display: block;
+      white-space: nowrap;
+      max-width: fit-content;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
 }
-nav ul {
-  list-style-type: none;
+.navbarre__main {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  padding: 20px 30px;
+  list-style-type: none;
 }
-nav ul a {
+.navbarre__link {
+  margin-left: 20px;
   text-decoration: none;
   color: black;
 }
-nav ul a:hover {
+.navbarre__link:hover {
   text-decoration: underline;
 }
 .section1 {
@@ -45,152 +76,260 @@ nav ul a:hover {
   display: flex;
   align-items: start;
   gap: 80px;
-}
-.section1 a {
-  border-radius: 50px;
-  background-color: #9792c6;
-  color: white;
-  text-decoration: none;
-  padding: 20px 30px;
-  display: block;
-  white-space: nowrap;
-  max-width: fit-content;
-  margin-top: 20px;
-}
-.contact-hover :hover {
-  opacity: 0.5;
+  &__tittle {
+    font-size: 2.5rem;
+    color: #a5b4fc;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    gap: 5px;
+  }
+  &__link {
+    border-radius: 50px;
+    background-color: #9792c6;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    white-space: nowrap;
+    max-width: fit-content;
+    margin-top: 20px;
+  }
+  &__contact:hover {
+    opacity: 0.5;
+  }
+  &__text {
+    text-align: justify;
+    font-size: 17.6px;
+    color: white;
+  }
+  &__text em {
+    font-style: normal;
+    color: #94a2ee;
+  }
+  &__picture {
+    height: 430px;
+  }
+  @media screen and (max-width: 996px) {
+    width: 100%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__picture {
+      width: 100%;
+      height: 100%;
+    }
+    &__tittle {
+      font-size: 1.5rem;
+    }
+    &__text {
+      text-align: center;
+      margin: 0px 0px 30px;
+    }
+  }
 }
 
-.paragraph {
-  text-align: justify;
-  font-size: 17.6px;
-  color: white;
-}
-.paragraph em {
-  font-style: normal;
-  color: #94a2ee;
-}
-.robbielens img {
-  height: 430px;
-}
 .section2 {
   text-align: center;
   padding: 80px;
   font-family: "Manrope", sans-serif;
+  &__img-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    object-fit: cover;
+  }
+  &__img {
+    width: 100%;
+    height: 311px;
+  }
+  &__tittle {
+    margin-bottom: 80px;
+  }
+  @media screen and (max-width: 996px) {
+    width: 100%;
+    display: block;
+    &__tittle {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+    &__img-container {
+      display: grid;
+      grid-template-columns: auto;
+      width: 100%;
+      gap: 10px;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
-.image-accueil {
+.section2__img-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
   object-fit: cover;
 }
-.image-accueil img {
+.section2__img {
   width: 100%;
   height: 311px;
 }
-.hsec2 {
+.section2__tittle {
   margin-bottom: 80px;
 }
-.contact {
+.section3__contact {
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 15px;
   margin-top: 10px;
 }
-.contact:nth-child(3) {
+.section3__contact--messag {
   grid-column: span 2;
+  @media screen and (max-width: 996px) {
+    grid-column: span 1;
+  }
 }
 label {
   color: white;
 }
-.contact input {
+.section3__contact input {
   height: 50px;
   border: 1px solid black;
   border-radius: 5px;
+  @media screen and (max-width: 996px) {
+    height: 25px;
+  }
 }
 .section3 {
   text-align: center;
   background-color: #1f2039;
   padding: 80px 175.5px;
+  &__contact input {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  &__contact {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  &__button {
+    border-radius: 50px;
+    background-color: #9792c6;
+    color: white;
+    padding: 20px 60px;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 20px;
+  }
+  &__button:hover {
+    opacity: 0.5;
+  }
+  &__contact label {
+    display: flex;
+  }
+  &__tittle {
+    color: #a5b4fc;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+  }
+  &__contact textarea {
+    border-radius: 5px;
+  }
+  &__contact--messag {
+    grid-column: span 2;
+  }
+  @media screen and (max-width: 996px) {
+    width: 100%;
+    display: block;
+    &__tittle {
+      font-size: 15px;
+    }
+    &__form {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__contact--messag {
+      grid-column: span 1;
+    }
+    &__contact input {
+      height: 25px;
+    }
+  }
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
-.envoie input {
-  border-radius: 50px;
-  background-color: #9792c6;
-  color: white;
-  padding: 20px 60px;
-  border: 0px;
-  margin-top: 20px;
-}
-.envoie input:hover {
-  opacity: 0.5;
-}
-.contact label {
-  display: flex;
-}
-.section3 h1 {
-  color: #a5b4fc;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-.form-input {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  gap: 10px;
-}
-textarea {
-  border-radius: 5px;
-}
-.section1 h1 {
-  font-size: 2.5rem;
-  color: #a5b4fc;
-  margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
-  gap: 5px;
-}
-footer .footer-container {
+
+.footer-container {
   justify-content: space-between;
   display: flex;
   align-items: center;
 }
-#twitter,
-#insta {
+.footer__media {
   display: inline-block;
   align-items: center;
-}
-#twitter {
   margin-right: 20px;
 }
-#twitter:hover,
-#insta:hover {
+.footer__media:hover {
   opacity: 0.5;
 }
 
-.section4,
-.section5 {
+.section-color {
   background-color: #1f2039;
   padding: 80px;
   width: 100%;
 }
 .section4 {
   text-align: center;
+  @media screen and (max-width: 996px) {
+    padding: 50px 20px;
+    width: 100%;
+    &__tittle1 {
+      font-size: 2rem;
+    }
+    &__text {
+      text-align: center;
+      margin: 0px 0px 30px;
+      width: 100%;
+      height: 100%;
+      font-size: 0.8rem;
+      padding: 20px 50px;
+    }
+    &__tittle2 {
+      margin: 10px 0px 15px;
+    }
+    &__main {
+      text-align: left;
+    }
+    &__link {
+      padding: 15px 40px;
+    }
+  }
 }
-.lienportfolio:hover {
+.section4__link:hover {
   opacity: 0.5;
 }
-.section4 h1 {
+.section4__tittle1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 55px;
   color: #a5b4fc;
 }
-.paraph {
+.section4__text {
   font-family: "Manrope", sans-serif;
   font-size: 17.6px;
   margin: 0px 225.5px 80px;
@@ -202,19 +341,19 @@ footer .footer-container {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
-.section4 h2 {
+.section4__tittle2 {
   font-family: "Manrope", sans-serif;
   text-align: center;
   font-size: 24px;
   color: #ffffff;
   margin: 30px 0px 80px;
 }
-.section4 ul {
+.section4__main {
   margin: 30px 0px 0px;
   padding: 0px 0px 0px 40px;
   font-family: "Manrope", sans-serif;
 }
-.lienportfolio {
+.section4__link {
   background-color: #9d9ad1;
   font-family: "Manrope", sans-serif;
   border-radius: 50px;
@@ -233,11 +372,11 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-.tableau th {
+table th {
   padding: 15px;
   text-align: center;
 }
-.tableau td {
+table td {
   padding: 80px;
   text-align: center;
 }
@@ -256,30 +395,50 @@ caption {
   padding: 80px;
   font-family: "Montserrat", sans-serif;
   color: #838fcb;
+  @media screen and (max-width: 996px) {
+    width: 100%;
+    height: 150px;
+    &__tittle {
+      font-size: 2rem;
+    }
+  }
 }
-.section6 h1 {
+.section6__tittle {
   height: 68px;
   font-size: 56px;
 }
 .section7 {
   padding: 80px;
   width: 1263.33px;
+  @media screen and (max-width: 996px) {
+    padding: 80px;
+    width: 1263.33px;
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__picture {
+      display: grid;
+      grid-template-columns: auto;
+      width: 100%;
+      gap: 10px;
+    }
+  }
 }
-.section7 h2,
-h3 {
+.section7__tittle {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   margin: 0px 0px 80px;
 }
-.section7 img {
+.section7__img {
   width: 357.77px;
   height: 300px;
   margin-right: 10px;
   margin-bottom: 10px;
   object-fit: cover;
 }
-.section-photo1,
-.section-photo2 {
+.section7-picture {
   grid-template-columns: auto auto auto;
   display: grid;
   gap: 4px;
@@ -297,168 +456,13 @@ h3 {
     width: 100%;
     padding: 50px 20px;
   }
-  header {
-    background-color: white;
-    height: 131.5px;
-    width: 100%;
-    padding: 20px;
-  }
-  .header-container ul {
-    height: 22px;
-  }
 
-  .header-container nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: auto;
-  }
-
+  /*ceci est robbie lens
   .robbielens {
     width: 100%;
-  }
-
-  .robbielens img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .section2,
-  .section3 {
-    display: block;
-  }
-  .section1 {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    gap: 0px;
-  }
-
-  .section1 h1 {
-    font-size: 1.5rem;
-  }
-
-  .div-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .div-principal .paragraph {
-    text-align: center;
-    margin: 0px 0px 30px;
-  }
-
-  .section1 a {
-    border-radius: 50px;
-    background-color: #9792c6;
-    color: white;
-    text-decoration: none;
-    padding: px 15px;
-    display: block;
-    white-space: nowrap;
-    max-width: fit-content;
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  .hsec2 {
-    margin-bottom: 40px;
-    font-size: 20px;
-  }
-  .image-accueil {
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-    gap: 10px;
-  }
-  .image-accueil img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .section3 h1 {
-    font-size: 15px;
-  }
-
-  .contact input {
-    height: 25px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-
-  .form-input {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    gap: 10px;
-  }
-  .contact:nth-child(3) {
-    grid-column: span 1;
-  }
-  .section4 h1 {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    color: #a5b4fc;
-  }
-  .section4 {
-    padding: 50px 20px;
-  }
-
-  .paraph {
-    text-align: center;
-    margin: 0px 0px 30px;
-    width: 100%;
-    height: 100%;
-    font-size: 0.8rem;
-    padding: 20px 50px;
-  }
-  .section4 h2 {
-    font-family: "Manrope", sans-serif;
-    text-align: center;
-    font-size: 24px;
-    color: #ffffff;
-    margin: 10px 0px 15px;
-  }
-  .paraph ul {
-    padding: 0px 0px 0px 40px;
-    margin: 30px 0px 0px;
-    text-align: left;
-  }
-  .lienportfolio {
-    background-color: #9d9ad1;
-    font-family: "Manrope", sans-serif;
-    border-radius: 50px;
-    padding: 15px 40px;
-    text-decoration: none;
-    color: white;
-  }
+  } */
 
   .section5 {
     display: none;
-  }
-  .section6 {
-    height: 150px;
-  }
-  .section6 h1 {
-    font-size: 2rem;
-  }
-  .section7 {
-    width: 100%;
-    padding: 50px 20px;
-    object-fit: contain;
-  }
-  .section-photo1,
-  .section-photo2 {
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-    gap: 10px;
-  }
-  .section7 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
