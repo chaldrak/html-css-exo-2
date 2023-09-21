@@ -117,8 +117,8 @@ footer {
     }
     @media screen and (max-width: 996px) {
 
-            display: flex;
-            flex-direction: column-reverse;
+     display: flex;
+      flex-direction: column-reverse;
       &__container {
         display: flex;
         flex-direction: column;
