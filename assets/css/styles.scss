@@ -183,18 +183,36 @@ footer {
     text-align: center;
     background-color: $section-color;
     padding: 80px 175.5px;
-    &__contact input {
-      height: 50px;
-      border: 1px solid black;
-      border-radius: 5px;
-    }
     &__contact {
       display: flex;
       flex-direction: column;
       gap: 10px;
       width: 100%;
+      & input {
+        height: 50px;
+        border-radius: 5px;
+        padding: 10px; 
+        outline: none;
+        transition: background 350ms ;
+    &:focus { 
+    border: 2.5px solid blueviolet;}
+    &:invalid {
+        background: #d17a7b;
+        border: 2.5px solid #d17a7b;
     }
-    
+    }
+        & label {
+            display: flex;
+          }
+          & textarea {
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            &:focus { 
+            border: 2.5px solid blueviolet;
+        background-color: aliceblue;}
+          }
+    }
     &__button {
       border-radius: 50px;
       background-color: #9792c6;
@@ -203,13 +221,16 @@ footer {
       cursor: pointer;
       border: 0px;
       margin-top: 20px;
+      transition: transform 400ms, background-color 300ms 100ms;
+
+      &:hover {
+        opacity: 0.5;
+        background-color: green;
+        transform: scale(1.13);
+      }
+      
     }
-    &__button:hover {
-      opacity: 0.5;
-    }
-    &__contact label {
-      display: flex;
-    }
+    
     &__tittle {
       color: #a5b4fc;
       font-weight: bold;
@@ -220,9 +241,6 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
       gap: 10px;
-    }
-    &__contact textarea {
-      border-radius: 5px;
     }
     &__contact--messag {
       grid-column: span 2;

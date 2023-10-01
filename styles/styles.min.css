@@ -194,16 +194,37 @@ label {
   background-color: #1f2039;
   padding: 80px 175.5px;
 }
-.section3__contact input {
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
 .section3__contact {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
+}
+.section3__contact input {
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  transition: background 350ms;
+}
+.section3__contact input:focus {
+  border: 2.5px solid blueviolet;
+}
+.section3__contact input:invalid {
+  background: #d17a7b;
+  border: 2.5px solid #d17a7b;
+}
+.section3__contact label {
+  display: flex;
+}
+.section3__contact textarea {
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+.section3__contact textarea:focus {
+  border: 2.5px solid blueviolet;
+  background-color: aliceblue;
 }
 .section3__button {
   border-radius: 50px;
@@ -213,12 +234,12 @@ label {
   cursor: pointer;
   border: 0px;
   margin-top: 20px;
+  transition: transform 400ms, background-color 300ms 100ms;
 }
 .section3__button:hover {
   opacity: 0.5;
-}
-.section3__contact label {
-  display: flex;
+  background-color: green;
+  transform: scale(1.13);
 }
 .section3__tittle {
   color: #a5b4fc;
@@ -230,9 +251,6 @@ label {
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 10px;
-}
-.section3__contact textarea {
-  border-radius: 5px;
 }
 .section3__contact--messag {
   grid-column: span 2;
